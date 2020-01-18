@@ -1,7 +1,7 @@
 {
   "name": "libtest",
   "version": "1.0.0",
-  "description": "",
+  "description": "scss boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
