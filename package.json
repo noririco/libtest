@@ -1,6 +1,7 @@
 {
   "name": "libtest",
   "version": "1.0.0",
+  "private": false,
   "description": "scss boilerplate",
   "main": "index.js",
   "scripts": {
