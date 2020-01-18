@@ -1,0 +1,22 @@
+{
+  "name": "libtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "nsncss/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/noririco/libtest.git"
+  },
+  "author": "nsn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noririco/libtest/issues"
+  },
+  "homepage": "https://github.com/noririco/libtest#readme"
+}
