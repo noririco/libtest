@@ -5,7 +5,17 @@
   "description": "scss boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "launch"          : "open https://github.com/noririco/libtest#readme",
+    "git:tag"         : "tag=$(npm version patch) && tag=v${tag#*@} && git push $tag",
+
+    "git:commit"      : "git add . && git commit -m",
+    "push:git"        : "git:commit && git push",
+    "push"            : "npm run push:git",
+    "version:patch"   : "npm version patch",
+    "git:all"         : ".\\git.sh",
+    "postpublish"     : "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag -a v$PACKAGE_VERSION && git push --tags",
+    "deploy"          : "npm run git:all"
   },
   "files": [
     "nsncss/"
